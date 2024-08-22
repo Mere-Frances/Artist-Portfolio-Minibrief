@@ -1,13 +1,16 @@
-import { useState } from 'react'
 import './App.css'
+import { HashRouter } from 'react-router-dom'
+import Links from './routes/Links'
+import Header from './components/nav/Header'
 
 const App = () => {
 
   return (
-    <>
-      test
-    </>
-  )
+    <HashRouter>
+      <Header/>
+      <Links/>
+    </HashRouter>
+    )
 }
 
 export default App
